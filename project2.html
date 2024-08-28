@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop Service Template</title>
+    <style>
+      body {
+        background-color: white;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #f5f5f5;
+      }
+      .logo img {
+        height: 20vh;
+      }
+      .header-list {
+        display: flex;
+        gap: 20px;
+      }
+      .header-list a {
+        text-decoration: none;
+        color: grey;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 0 20px;
+        position: relative;
+      }
+      .header-list a:after {
+        content: "";
+        position: absolute;
+        background-color: burlywood;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: width 0.3s;
+      }
+      .header-list a:hover:after {
+        width: 100%;
+      }
+      .accountbutton {
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 20px;
+        padding: 10px 30px;
+        color: blueviolet;
+        background-color: pink;
+        cursor: pointer;
+      }
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+      }
+      .left {
+        flex: 1;
+        max-width: 50%;
+      }
+      .head {
+        color: red;
+        margin: 20px 0;
+      }
+      .p2 {
+        color: blue;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: left;
+      }
+      .newaccount {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 20px;
+        padding: 10px 30px;
+        color: white;
+        background-color: red;
+        text-align: center;
+        cursor: pointer;
+        margin: 20px 0;
+      }
+      .right {
+        flex: 2;
+        max-width: 100%;
+        text-align: center;
+      }
+      .right img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-width: 768px) {
+        .header-list {
+          flex-direction: column;
+          align-items: center;
+        }
+        .header-list a {
+          padding: 10px;
+        }
+        .accountbutton {
+          font-size: 0.9rem;
+          padding: 8px 20px;
+        }
+        .main-content {
+          flex-direction: column;
+          align-items: center;
+        }
+        .left,
+        .right {
+          max-width: 100%;
+        }
+        .right img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT74jigQaxY-T-2uPBK5c5vmD0HfMtsMBEpQg&s"
+          alt="logo"
+        />
+      </div>
+      <div class="header-list">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="accountbutton">Login/Signup</div>
+    </nav>
+
+    <div class="main-content">
+      <div class="left">
+        <div class="head">
+          <h1>CYBER</h1>
+        </div>
+        <h1 class="p2">
+          MONDAY<br />
+          SALE
+        </h1>
+        <div class="buttons">
+          <span class="newaccount">OUR SERVICES</span>
+        </div>
+      </div>
+
+      <div class="right">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzTx4EXGAsLKYXCkQwrf8pMyUXGWPArDXfQ&s"
+          alt="right part"
+        />
+      </div>
+    </div>
+  </body>
+</html>
